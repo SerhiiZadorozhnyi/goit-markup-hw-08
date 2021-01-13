@@ -1,0 +1,36 @@
+.body{
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    background: $text-color-white;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: $text-color-black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+.is-hidden{
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}

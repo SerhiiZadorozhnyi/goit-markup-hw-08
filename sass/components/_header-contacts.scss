@@ -1,0 +1,46 @@
+/*Контакты*/
+.contacts-nav{
+    display: flex;
+    margin-left: 305px;
+
+    li{
+        display: flex;
+        align-items: center;
+
+        &:nth-child(1){
+            padding-right: 30px;
+        }
+    }
+
+    a{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: $text-color-grey;
+        display: flex;
+        align-items: center;
+        transition: $animation-timing-time;
+
+        &:hover,
+        &:focus{
+        color: $bt-second;
+        transition: $animation-timing-time;
+        }
+    }
+}
+
+.link-icon{
+    fill: currentColor;
+    padding-right: 10px;
+}
+
+.icon-email{
+    width: 1.9em;
+    height: 1.9em;
+}
+
+.icon-smartphone{
+    width: 1.45em;
+    height: 1.45em;
+}

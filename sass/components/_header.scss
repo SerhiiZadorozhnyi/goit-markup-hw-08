@@ -1,0 +1,77 @@
+/*Шапка страницы*/
+#header{
+    background: $text-color-white;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $border-header;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+    margin-right: 93px;
+
+    span{
+        color: $black-color;
+    }
+}
+
+/*Навигация страницы*/
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+
+.site-nav{
+    display: flex;
+
+    a{
+        color: $text-color-black;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        transition: $animation-timing-time;
+
+        &:hover,
+        &:focus{
+        color: $bt-second;
+        transition: $animation-timing-time;
+        }
+    }
+
+    li{
+        display: flex;
+        justify-content: space-around;
+
+        &:nth-child(-n+2){
+            padding-right: 50px;
+        }
+    }
+
+    .link.current{
+        color: $accent-color;
+
+        &:after{
+            display: box;
+            background: currentColor;
+            content: "";
+            width: inherit;
+            height: 4px;
+            border-radius: 2px;
+            display: flex;
+            position: relative;
+            top: 31.5px;
+        }
+    }
+}
