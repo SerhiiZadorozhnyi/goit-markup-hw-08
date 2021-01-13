@@ -8,24 +8,24 @@
 
 .footer-div{
     display: flex;
-}
-
-.footer-container{
-    display: flex;
     flex-direction: column;
-}
-
-.footer-address{
-    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Лого футтера */
+.div-footer-logo{
+    margin: auto;
+}
+
 .footer-logo {
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 31px;
+    // font-size: 26px;
+    font-size: 24px;
+    line-height: 28px;
+    // line-height: 31px;
     letter-spacing: 0.03em;
     color: $bt-second;
 
@@ -34,20 +34,44 @@
     }
 }
 
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-address{
+    // display: flex;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 1200px){
+
+}
+
+
+
 /* Адрес и контакты */
+
+
 .adress-footer{
-    margin-top: 20px;
+    // margin-top: 20px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    height: 81px;
-    width: 231px;
+    // height: 81px;
+    // width: 231px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    // justify-content: space-between;
 
     a{
         font-family: Roboto;
@@ -73,7 +97,9 @@
 .footer-social{
     display: flex;
     flex-direction: column;
-    margin-left: 70px;
+    margin-top: 60px;
+    align-items: center;
+    // margin-left: 70px;
 }
 
 .footer-social-description{
@@ -85,7 +111,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $text-color-white;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
 }
 
 .footer-social-list{
@@ -110,6 +136,7 @@
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: $animation-timing-time;
+    margin-top: 20px;
 
     &:hover,
     &:focus{
@@ -128,7 +155,9 @@
 .subscription{
     display: flex;
     flex-direction: column;
-    margin-left: 93px;
+    // align-items: center;
+    // margin-left: 93px;
+    margin-top: 60px;
 
     p{
         font-family: Roboto;
@@ -139,16 +168,19 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $text-color-white;
+        margin: auto;
     }
 }
 
 .subscription-div{
-    display: flex;
-    margin-top: 20px;
+    // display: flex;
+    // margin-top: 20px;
 }
 
 .subscription-input{
-    width: 358px;
+    // width: 358px;
+    margin-top: 20px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -189,7 +221,10 @@ input[type="email"]::-moz-placeholder {
     justify-content: space-between;
     padding-left: 26px;
     padding-right: 31px;
-    margin-left: 15px;
+    // margin-left: 15px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     outline: none;
 
     span{

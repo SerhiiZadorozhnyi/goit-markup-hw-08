@@ -1,7 +1,21 @@
 .container{
-    width: 1200px;
+    width: 480px;
     padding-right: 15px;
     padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .container{
+        width: 1200px;
+    }
+}
+
+
+// (480px, 768px и 1200px)
