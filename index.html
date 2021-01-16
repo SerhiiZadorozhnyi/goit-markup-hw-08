@@ -18,7 +18,16 @@
                 <!-- Логотип страницы -->
                 <a href="./index.html" class="logo">Web<span>Studio</span></a>
                 <!-- Навигация страницы -->
-                <nav class="main-nav"> 
+
+                <button type="button" class="menu-button is-open" data-menu-button>
+                    <svg width="40px" height="40px">
+                      <use class="icon-close" href="./"></use>
+                      <use class="icon-menu" href="./images/icons/sprite.svg#icon-mobile-menu"></use>
+                    </svg>
+                  </button>
+          
+
+                <nav class="main-nav" data-menu> 
                     <ul class="site-nav">
                         <li>
                             <a href="./index.html" class="link current">Студия</a>
@@ -50,6 +59,13 @@
                         </li>
                     </ul>
                 </nav>
+                <div>
+                    <!-- <button data-menu-button class="button-mobile-menu">
+                        <svg class="mobile-menu">
+                            <use href="./images/icons/sprite.svg#icon-mobile-menu"></use>
+                        </svg>
+                    </button> -->
+                </div>
             </div>
         </div>
     </header>
@@ -124,6 +140,7 @@
                                     <button class="send-button">Отправить</button>
                                 </div>
                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,22 +150,38 @@
             <div class="container">
                 <ul class="features">
                     <li>
-                        <img src="./images/Rectangle 1.svg" alt="features" width="270px">
+                        <div>
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-features-1"></use>
+                            </svg>
+                        </div>
                         <h3>ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                         <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
                     <li>
-                        <img src="./images/Rectangle 2.svg" alt="features" width="270px">
+                        <div>
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-features-2"></use>
+                            </svg>
+                        </div>
                         <h3>ПУНКТУАЛЬНОСТЬ</h3>
                         <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
                     <li>
-                        <img src="./images/Rectangle 3.svg" alt="features" width="270px">
+                        <div>
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-features-3"></use>
+                            </svg>
+                        </div>
                         <h3>ПЛАНИРОВАНИЕ</h3>
                         <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
                     <li>
-                        <img src="./images/Rectangle 4.svg" alt="features" width="270px">
+                        <div>
+                            <svg>
+                                <use href="./images/icons/sprite.svg#icon-features-4"></use>
+                            </svg>
+                        </div>
                         <h3>СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
                         <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>

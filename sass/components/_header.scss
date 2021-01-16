@@ -9,18 +9,19 @@
 .header-container{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo{
     font-family: Raleway;
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
+    font-size: 24px;
+    line-height: 28px;
     letter-spacing: 0.03em;
     color: $accent-color;
     margin-right: 93px;
-
+    
     span{
         color: $black-color;
     }
@@ -28,50 +29,241 @@
 
 /*Навигация страницы*/
 .main-nav{
-    display: flex;
-    align-items: center;
+    display: none;
+}
+// .main-nav{
+//     display: flex;
+//     align-items: center;
+// }
+
+// .site-nav{
+//     display: flex;
+    
+//     a{
+//         color: $text-color-black;
+//         font-weight: 500;
+//         font-size: 14px;
+//         line-height: 16px;
+//         letter-spacing: 0.02em;
+//         transition: $animation-timing-time;
+        
+//         &:hover,
+//         &:focus{
+//         color: $bt-second;
+//         transition: $animation-timing-time;
+//         }
+//     }
+    
+//     li{
+//         display: flex;
+//         justify-content: space-around;
+
+//         &:nth-child(-n+2){
+//             padding-right: 50px;
+//         }
+//     }
+
+//     .link.current{
+//         color: $accent-color;
+
+//         &:after{
+//             display: box;
+//             background: currentColor;
+//             content: "";
+//             width: inherit;
+//             height: 4px;
+//             border-radius: 2px;
+//             display: flex;
+//             position: relative;
+//             top: 31.5px;
+//         }
+//     }
+// }
+
+.button-mobile-menu{
+    width: 24px;
+    height: 16px;
+    fill: $black-color;
+    margin-right: 8px;
+    margin-left: auto;
+    background-image: ./images/icons/sprite.svg#icon-mobile-menu;
+    
+    &:hover,
+    &:focus{
+        fill: $accent-color;
+        cursor: pointer;
+    }
 }
 
-.site-nav{
-    display: flex;
+// .button-mobile-menu{
+//     background-color: none;
+//     outline: none;
 
-    a{
-        color: $text-color-black;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-        transition: $animation-timing-time;
+//     .mobile-menu{
+//         width: 24px;
+//         height: 16px;
+//         fill: $black-color;
+//         margin-right: 8px;
+//         // margin-left: auto;
+//         // background-image: url("../../images/icons/sprite.svg#icon-mobile-menu");
+        
+//         &:hover,
+//         &:focus{
+//             fill: $accent-color;
+//             cursor: pointer;
+//         }
+//     }
+// }
 
-        &:hover,
-        &:focus{
-        color: $bt-second;
-        transition: $animation-timing-time;
-        }
+
+
+
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+  
+    & .icon-close {
+      display: none;
     }
+  
+    &.is-open .icon-close {
+      display: block;
+    }
+  
+    &.is-open .icon-menu {
+      display: none;
+    }
+    
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  
+  .menu-container {
+    @media screen and (max-width: 767px){
+    position: absolute;
+    display: none;
+  
+    top: 100%;
+    left: 0;
+    width: 100%;
+  
+     text-align: center;
+    background-color: #fff;
+    border-top: 1px solid #ececec;
+  
+    padding: 60px;
+  
+    z-index: 999;
+  
+    &.is-open {
+      display: block;
+    }
+    } 
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  
 
-    li{
+
+
+
+
+
+
+@media screen and (min-width: $tablet){
+
+}
+
+@media screen and (min-width: $desktop){
+    #header{
+        background: $text-color-white;
+        padding-top: 24px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid $border-header;
+    }
+    
+    .header-container{
         display: flex;
-        justify-content: space-around;
-
-        &:nth-child(-n+2){
-            padding-right: 50px;
-        }
+        align-items: center;
+    }
+    
+    .logo{
+        font-size: 26px;
+        line-height: 31px;
     }
 
-    .link.current{
+    .logo{
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
         color: $accent-color;
-
-        &:after{
-            display: box;
-            background: currentColor;
-            content: "";
-            width: inherit;
-            height: 4px;
-            border-radius: 2px;
-            display: flex;
-            position: relative;
-            top: 31.5px;
+        margin-right: 93px;
+    
+        span{
+            color: $black-color;
         }
+    }
+    
+    /*Навигация страницы*/
+    .main-nav{
+        display: flex;
+        align-items: center;
+    }
+    
+    .site-nav{
+        display: flex;
+    
+        a{
+            color: $text-color-black;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            transition: $animation-timing-time;
+    
+            &:hover,
+            &:focus{
+            color: $bt-second;
+            transition: $animation-timing-time;
+            }
+        }
+    
+        li{
+            display: flex;
+            justify-content: space-around;
+    
+            &:nth-child(-n+2){
+                padding-right: 50px;
+            }
+        }
+    
+        .link.current{
+            color: $accent-color;
+    
+            &:after{
+                display: box;
+                background: currentColor;
+                content: "";
+                width: inherit;
+                height: 4px;
+                border-radius: 2px;
+                display: flex;
+                position: relative;
+                top: 31.5px;
+            }
+        }
+    }
+    
+    .mobile-menu{
+        display: none;
     }
 }
