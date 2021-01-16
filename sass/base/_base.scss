@@ -6,10 +6,28 @@
 
 h2{
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.03em;
+    font-size: 28px;
+    line-height: 33px;
     color: $text-color-black;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+@media screen and (min-winth: $tablet){
+    h2{
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+    }
+}
+
+@media screen and (min-width: $desktop){
+    h2{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
 }
 
 *{
