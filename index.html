@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,39 +17,30 @@
                 <!-- Логотип страницы -->
                 <a href="./index.html" class="logo">Web<span>Studio</span></a>
                 <!-- Навигация страницы -->
-
-                <button type="button" class="menu-button is-open" data-menu-button>
-                    <svg width="40px" height="40px">
-                      <use class="icon-close" href="./"></use>
-                      <use class="icon-menu" href="./images/icons/sprite.svg#icon-mobile-menu"></use>
-                    </svg>
-                  </button>
-          
-
-                <nav class="main-nav" data-menu> 
+                <nav class="main-nav" id="main-nav" data-menu> 
                     <ul class="site-nav">
                         <li>
-                            <a href="./index.html" class="link current">Студия</a>
+                            <a href="./index.html" class="item current">Студия</a>
                         </li>
                         <li>
-                            <a href="./portfolio.html" class="link">Портфолио</a>
+                            <a href="./portfolio.html" class="item">Портфолио</a>
                         </li>
                         <li>
-                            <a href="#" class="link">Контакты</a>
+                            <a href="#" class="item">Контакты</a>
                         </li>
                     </ul>
-                <!-- Контакты -->
+                    <!-- Контакты -->
                     <ul class="contacts-nav">
-                        <li>
-                            <a href="mailto:info@devstudio.com">
+                        <li class="item">
+                            <a href="mailto:info@devstudio.com" class="link">
                                 <svg class="link-icon icon-email">
                                     <use href="./images/icons/sprite.svg#icon-message"></use>
                                 </svg>
                                 info@devstudio.com
                             </a>
                         </li>
-                        <li>
-                            <a href="tel:+380961111111">
+                        <li class="item">
+                            <a href="tel:+380961111111" class="link">
                                 <svg class="link-icon icon-smartphone">
                                     <use href="./images/icons/sprite.svg#icon-smartphone"></use>
                                 </svg>
@@ -59,13 +49,12 @@
                         </li>
                     </ul>
                 </nav>
-                <div>
-                    <!-- <button data-menu-button class="button-mobile-menu">
-                        <svg class="mobile-menu">
-                            <use href="./images/icons/sprite.svg#icon-mobile-menu"></use>
-                        </svg>
-                    </button> -->
-                </div>
+                <button class="menu-button" type="button" aria-controls="main-nav" aria-expanded="false" data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./images/icons/sprite.svg#icon-mobile-menu"></use>
+                        <use class="icon-close-menu" href="./images/icons/sprite.svg#icon-mobile-menu-close"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>

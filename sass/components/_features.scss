@@ -17,11 +17,33 @@
 
         li{
             width: 270px;
+
             img{
                 padding-bottom: 30px;
             }
         }
     }
+    
+    .features{
+        display: flex;
+        justify-content: space-between;
+    
+        li{
+            width: 270px;
+        }
+    
+        img{
+            padding-bottom: 30px;
+        }
+    }
+    
+
+
+
+
+
+
+
 }
 
 .features{
