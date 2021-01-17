@@ -12,22 +12,21 @@
     justify-content: space-between;
 }
 
-.logo {
-    @extend %logoweb;
+.logo{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
     color: $accent-color;
-    
+    margin-right: 93px;
+
     span{
-        color: $text-color-black;
+        color: $black-color;
     }
-    
-	@media screen and (min-width: $mobile) {
-		@include font(700, 24px, 1.16, 0.03em);
-    }
-    
-	@media screen and (min-width: $desktop) {
-		@include font(700, 26px, 1.19, 0.03em);
-	}
 }
+
 
 .nav-contacts {
 	@media screen and (max-width: 767px) {

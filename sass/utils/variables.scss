@@ -13,6 +13,8 @@ $animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
 $animation-timing-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 // Пиксели
-$mobile: 420px;
+$mobile: 480px;
+$mobile-maximum: 767px;
 $tablet: 768px;
+$tablet-maximum: 1199px;
 $desktop: 1200px;
