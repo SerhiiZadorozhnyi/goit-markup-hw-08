@@ -14,15 +14,17 @@
 }
 
 .clients-list{
-    // padding-top: 50px;
     margin-top: 30px;
     display: flex;
-    // justify-content: space-between;
     justify-content: space-between;
-    // flex-direction: row;--
     flex-wrap: wrap;
     align-content: space-between;
     height: 330px;
+
+    @media screen and (min-width: $desktop){
+        padding-top: 50px;
+        flex-direction: row;
+    }
 
     li{
         display: flex;
@@ -31,7 +33,6 @@
 }
 
 .clients-link{
-    // width: 170px;
     width: 210px;
     height: 90px;
     border: 1px solid $icon-collor;
@@ -41,6 +42,10 @@
     align-items: center;
     color: $icon-collor;
     transition: $animation-timing-time;
+
+    @media screen and (min-width: $desktop){
+        width: 170px;
+    }
 
     &:hover,
     &:focus{
@@ -52,20 +57,4 @@
 
 .clients-icon{
     fill: currentColor;
-}
-
-@media screen and (min-width: $tablet){
-
-}
-
-@media screen and (min-width: $desktop){
-    .clients-list{
-        padding-top: 50px;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-
-    .clients-link{
-        width: 170px;
-    }
 }

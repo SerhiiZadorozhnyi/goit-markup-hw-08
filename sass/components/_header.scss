@@ -27,7 +27,7 @@
     }
 }
 
-.main-nav {
+.nav-contacts {
 	@media screen and (max-width: 767px) {
 		display: none;
 		position: absolute;
@@ -38,7 +38,7 @@
 		padding-bottom: 60px;
 		border-top: 1px solid #ececec;
 		background: #ffffff;
-		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
 		&.is-open {
 			display: block;
 		}
@@ -54,7 +54,7 @@
 	}
 }
 
-.site-nav{
+.nav{
     margin-top: 0px;
 	margin-bottom: 0px;
 	padding: 0px;
@@ -65,38 +65,38 @@
 	}
 }
 
-.site-nav .item{
+.nav .item{
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 60px;
+        }
+    }
+    @media screen and (min-width: $tablet) {
+        margin-left: 50px;
+    }
+    &:first-child {
+        @media screen and (min-width: $tablet) {
+            margin-left: 81px;
+        }
+    }
+    &:first-child {
+        @media screen and (min-width: $desktop) {
+            margin-left: 85px;
+        }
+    }
+    &.current {
         @media screen and (max-width: 767px) {
-            text-align: center;
-            margin-bottom: 40px;
-            &:last-child {
-                margin-bottom: 60px;
-            }
+            margin-bottom: 48px;
         }
         @media screen and (min-width: $tablet) {
-            margin-left: 50px;
+            margin-bottom: 0px;
         }
-        &:first-child {
-            @media screen and (min-width: $tablet) {
-                margin-left: 81px;
-            }
-        }
-        &:first-child {
-            @media screen and (min-width: $desktop) {
-                margin-left: 85px;
-            }
-        }
-        &.active {
-            @media screen and (max-width: 767px) {
-                margin-bottom: 48px;
-            }
-            @media screen and (min-width: $tablet) {
-                margin-bottom: 0px;
-            }
-        }
+    }
 }
 
-.site-nav .link{
+.nav .link{
     position: relative;
 	display: flex;
 	color: $text-color-black;
@@ -141,212 +141,96 @@
 		color: $accent-color;
 	}
 }
-
-/*Навигация страницы*/
-.main-nav{
-    display: none;
-}
-// .main-nav{
-//     display: flex;
-//     align-items: center;
-// }
-
-// .site-nav{
-//     display: flex;
-    
-//     a{
-//         color: $text-color-black;
-//         font-weight: 500;
-//         font-size: 14px;
-//         line-height: 16px;
-//         letter-spacing: 0.02em;
-//         transition: $animation-timing-time;
-        
-//         &:hover,
-//         &:focus{
-//         color: $bt-second;
-//         transition: $animation-timing-time;
-//         }
-//     }
-    
-//     li{
-//         display: flex;
-//         justify-content: space-around;
-
-//         &:nth-child(-n+2){
-//             padding-right: 50px;
-//         }
-//     }
-
-//     .link.current{
-//         color: $accent-color;
-
-//         &:after{
-//             display: box;
-//             background: currentColor;
-//             content: "";
-//             width: inherit;
-//             height: 4px;
-//             border-radius: 2px;
-//             display: flex;
-//             position: relative;
-//             top: 31.5px;
-//         }
-//     }
-// }
-
-// .button-mobile-menu{
-//     width: 24px;
-//     height: 16px;
-//     fill: $black-color;
-//     margin-right: 8px;
-//     margin-left: auto;
-//     background-image: ./images/icons/sprite.svg#icon-mobile-menu;
-    
-//     &:hover,
-//     &:focus{
-//         fill: $accent-color;
-//         cursor: pointer;
-//     }
-// }
-
-// .button-mobile-menu{
-//     background-color: none;
-//     outline: none;
-
-//     .mobile-menu{
-//         width: 24px;
-//         height: 16px;
-//         fill: $black-color;
-//         margin-right: 8px;
-//         // margin-left: auto;
-//         // background-image: url("../../images/icons/sprite.svg#icon-mobile-menu");
-        
-//         &:hover,
-//         &:focus{
-//             fill: $accent-color;
-//             cursor: pointer;
-//         }
-//     }
-// }
-
-
-
-
-.menu-button {
-	display: inline-flex;
-	margin: 0;
-	padding: 0;
-	border: none;
-	background-color: transparent;
-	@media screen and (min-width: $tablet) {
-		display: none;
-	}
-	& .icon-close-menu {
-		display: none;
-	}
-	&.is-open .icon-close-menu {
-		display: block;
-	}
-	&.is-open .icon-menu {
-		display: none;
-	}
-	&:hover,
-	&:focus {
-		fill: $accent-color;
-	}
-}
   
 
+// @media screen and (min-width: $desktop){
+//     #header{
+//         background: $text-color-white;
+//         padding-top: 24px;
+//         padding-bottom: 25px;
+//         border-bottom: 1px solid $border-header;
+//     }
+    
+//     .header-container{
+//         display: flex;
+//         align-items: center;
+//     }
+    
+//     .logo{
+//         font-size: 26px;
+//         line-height: 31px;
+//     }
 
-@media screen and (min-width: $desktop){
-    #header{
-        background: $text-color-white;
-        padding-top: 24px;
-        padding-bottom: 25px;
-        border-bottom: 1px solid $border-header;
-    }
+//     .logo{
+//         font-family: Raleway;
+//         font-style: normal;
+//         font-weight: 700;
+//         font-size: 24px;
+//         line-height: 28px;
+//         letter-spacing: 0.03em;
+//         color: $accent-color;
+//         margin-right: 93px;
     
-    .header-container{
-        display: flex;
-        align-items: center;
-    }
-    
-    .logo{
-        font-size: 26px;
-        line-height: 31px;
-    }
+//         span{
+//             color: $black-color;
+//         }
+//     }
 
-    .logo{
-        font-family: Raleway;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0.03em;
-        color: $accent-color;
-        margin-right: 93px;
+//     .menu-button{
+//         display: none;
+//     }
     
-        span{
-            color: $black-color;
-        }
-    }
-
-    .menu-button{
-        display: none;
-    }
+//     /*Навигация страницы*/
+//     .main-nav{
+//         display: flex;
+//         align-items: center;
+//     }
     
-    /*Навигация страницы*/
-    .main-nav{
-        display: flex;
-        align-items: center;
-    }
+//     .site-nav{
+//         display: flex;
     
-    .site-nav{
-        display: flex;
+//         a{
+//             color: $text-color-black;
+//             font-weight: 500;
+//             font-size: 14px;
+//             line-height: 16px;
+//             letter-spacing: 0.02em;
+//             transition: $animation-timing-time;
     
-        a{
-            color: $text-color-black;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16px;
-            letter-spacing: 0.02em;
-            transition: $animation-timing-time;
+//             &:hover,
+//             &:focus{
+//             color: $bt-second;
+//             transition: $animation-timing-time;
+//             }
+//         }
     
-            &:hover,
-            &:focus{
-            color: $bt-second;
-            transition: $animation-timing-time;
-            }
-        }
+//         li{
+//             display: flex;
+//             justify-content: space-around;
     
-        li{
-            display: flex;
-            justify-content: space-around;
+//             &:nth-child(-n+2){
+//                 padding-right: 50px;
+//             }
+//         }
     
-            &:nth-child(-n+2){
-                padding-right: 50px;
-            }
-        }
+//         .link.current{
+//             color: $accent-color;
     
-        .link.current{
-            color: $accent-color;
+//             &:after{
+//                 display: box;
+//                 background: currentColor;
+//                 content: "";
+//                 width: inherit;
+//                 height: 4px;
+//                 border-radius: 2px;
+//                 display: flex;
+//                 position: relative;
+//                 top: 31.5px;
+//             }
+//         }
+//     }
     
-            &:after{
-                display: box;
-                background: currentColor;
-                content: "";
-                width: inherit;
-                height: 4px;
-                border-radius: 2px;
-                display: flex;
-                position: relative;
-                top: 31.5px;
-            }
-        }
-    }
-    
-    .mobile-menu{
-        display: none;
-    }
-}
+//     .mobile-menu{
+//         display: none;
+//     }
+// }

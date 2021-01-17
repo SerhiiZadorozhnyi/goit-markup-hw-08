@@ -1,49 +1,9 @@
 /*Особенности*/
 .features-section{
     padding-top: 60px;
-}
-
-@media screen and (min-width: $tablet){
-
-}
-
-@media screen and (min-width: $desktop){
-    .features-section{
+    @media screen and (min-width: $desktop){
         padding-top: 94px;
     }
-
-    .features{
-        justify-content: space-between;
-
-        li{
-            width: 270px;
-
-            img{
-                padding-bottom: 30px;
-            }
-        }
-    }
-    
-    .features{
-        display: flex;
-        justify-content: space-between;
-    
-        li{
-            width: 270px;
-        }
-    
-        img{
-            padding-bottom: 30px;
-        }
-    }
-    
-
-
-
-
-
-
-
 }
 
 .features{
@@ -54,6 +14,9 @@
 
     li{
         width: 100%;
+        @media screen and (min-width: $desktop){
+            width: 270px;
+        }
 
         &:nth-child(-n+3){
             padding-bottom: 30px;
