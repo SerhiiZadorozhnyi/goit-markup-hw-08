@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,AAAA,CACN,UAAU,CAAE,IAAI,CAChB,aAAa,CAAE,IAAI,CACtB,AAED,AAAA,cAAc,AAAA,CACV,OAAO,CAAE,IAAI,CACb,cAAc,CAAE,MACpB,CAAC",
+    "sources": [
+        "../sass/components/portfolio.scss"
+    ],
+    "names": [],
+    "file": "portfolio.min.css"
+}

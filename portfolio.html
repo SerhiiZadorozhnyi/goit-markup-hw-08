@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,39 +11,51 @@
 </head>
 <body class="body">
     <!-- Шапка страницы -->
-    <header class="header">
+    <header id="header">
         <div class="container">
-            <div class="header-container">
-                <!-- Логотип страницы -->
-                <a href="./index.html" class="logo">Web<span>Studio</span></a>
-                <!-- Навигация страницы -->
-                <nav class="main-nav">
-                    <ul class="site-nav">
-                        <li><a href="./index.html" class="link">Студия</a></li>
-                        <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                        <li><a href="#" class="link">Контакты</a></li>
-                    </ul>
-                    <!-- Контакты -->
-                    <ul class="contacts-nav">
-                        <li>
-                            <a href="mailto:info@devstudio.com">
-                                <svg class="link-icon icon-email">
-                                    <use href="./images/icons/sprite.svg#icon-message"></use>
-                                </svg>
-                                info@devstudio.com
-                            </a>
-                        </li>
-                        <li>
-                            <a href="tel:+380961111111">
-                                <svg class="link-icon icon-smartphone">
-                                    <use href="./images/icons/sprite.svg#icon-smartphone"></use>
-                                </svg>
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                <div class="header-container">
+                    <!-- Логотип страницы -->
+                    <a href="./index.html" class="logo">Web<span>Studio</span></a>
+                    <!-- Навигация страницы -->
+                    <nav class="nav-contacts" id="nav-contacts" data-menu> 
+                        <ul class="nav">
+                            <li class="item">
+                                <a href="./index.html" class="link active">Студия</a>
+                            </li>
+                            <li class="item">
+                                <a href="./portfolio.html" class="link">Портфолио</a>
+                            </li>
+                            <li class="item">
+                                <a href="#" class="link">Контакты</a>
+                            </li>
+                        </ul>
+                        <!-- Контакты -->
+                        <ul class="contacts-nav">
+                            <li class="item">
+                                <a href="mailto:info@devstudio.com" class="link">
+                                    <svg class="link-icon icon-email">
+                                        <use href="./images/icons/sprite.svg#icon-message"></use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="tel:+380961111111" class="link">
+                                    <svg class="link-icon icon-smartphone">
+                                        <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="menu-button" type="button" aria-controls="main-nav" aria-expanded="false" data-menu-button>
+                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="icon-menu" href="./images/icons/sprite.svg#icon-mobile-menu"></use>
+                            <use class="icon-close-menu" href="./images/icons/sprite.svg#icon-mobile-menu-close"></use>
+                        </svg>
+                    </button>
+                </div>
         </div>
     </header>
     <!--Контент страницы-->
