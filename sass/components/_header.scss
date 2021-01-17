@@ -2,14 +2,16 @@
 #header{
     background: $text-color-white;
     // padding-top: 24px;
-    // padding-bottom: 25px;
-    border-bottom: 1px solid $border-header;
+	// padding-bottom: 25px;
+	
 }
 
 .header-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+	justify-content: space-between;
+	height: 59px;
+    border-bottom: 1px solid $border-header;
 }
 
 .logo{
@@ -174,7 +176,9 @@
     
 	&.is-open .icon-menu {
 		display: none;
-    }
+		width: 24px;
+		height: 16px;
+	}
     
 	&:hover,
 	&:focus {
