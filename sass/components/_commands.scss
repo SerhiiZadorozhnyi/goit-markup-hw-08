@@ -3,6 +3,11 @@
     background: $bt-primary;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .commands-div{
@@ -13,6 +18,10 @@
     h2{
         padding-bottom: 30px;
         text-align: center;
+
+        @media screen and (min-width: $desktop){
+            padding-bottom: 50px;
+        }
     }
 }
 
@@ -31,10 +40,6 @@
 }
 
 @media screen and (min-width: $desktop){
-    .commands{
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
 
     .commands-div{
 

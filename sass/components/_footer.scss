@@ -11,12 +11,22 @@
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: $desktop){
+        flex-direction: inherit;
+    }
 }
 
 /* Лого футтера */
 .div-footer-logo{
     margin: auto;
 }
+
+// .div-footer-logo + .footer-container{
+//     @media screen and (min-width: $desktop){
+//         flex-direction: column;
+//     }
+// }
 
 .footer-logo {
     font-family: Raleway;
@@ -155,9 +165,12 @@
 .subscription{
     display: flex;
     flex-direction: column;
-    // align-items: center;
-    // margin-left: 93px;
     margin-top: 60px;
+
+    @media screen and (min-width: $desktop){
+        align-items: center;
+        margin-left: 93px;
+    }
 
     p{
         font-family: Roboto;
@@ -199,6 +212,10 @@
     align-items: center;
     letter-spacing: 0.03em;
     outline: none;
+
+    @media screen and (min-width: $desktop){
+        width: 358px;
+    }
 }
 
 input[type="email"]::-webkit-input-placeholder {

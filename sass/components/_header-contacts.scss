@@ -6,6 +6,7 @@
     
     @media screen and (min-width: $desktop){
         margin-left: 305px;
+        flex-direction: inherit;
     }
 
     li{
@@ -20,6 +21,7 @@
 
             @media screen and (min-width: $desktop){
                 padding-right: 30px;
+                margin-bottom: 0px;
             }
         }
     }

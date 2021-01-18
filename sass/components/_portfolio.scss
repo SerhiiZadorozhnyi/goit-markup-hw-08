@@ -1,6 +1,13 @@
 .portfolio{
-    margin-top: 94px;
-    margin-bottom: 94px;
+    @media screen and (max-width: $mobile-maximum){
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: $desktop){
+        margin-top: 94px;
+        margin-bottom: 94px;
+    }
 }
 
 .portfolio-div{
@@ -26,14 +33,26 @@
         padding-right: 121px;
     }
 
-    @media screen and (min-width: $desktop){
-            width: 611px;
-            margin-left: auto;
-            margin-right: auto;
-            justify-content: space-between;
+    &:nth-child(-n+2){
+        margin-bottom: 30px;
+        justify-content: space-between;
     }
 
+    @media screen and (min-width: $desktop){
+            width: 611px;
+            // height: 54px;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: inherit;
+
+            &:nth-child(-n+2){
+                // margin-bottom: 30px;
+                // justify-content: space-between;
+            }
+        }
+
     button{
+        // height: 38px;
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;

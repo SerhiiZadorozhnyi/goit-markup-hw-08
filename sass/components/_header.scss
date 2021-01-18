@@ -1,8 +1,6 @@
 /*Шапка страницы*/
 #header{
     background: $text-color-white;
-    // padding-top: 24px;
-	// padding-bottom: 25px;
 	
 }
 
@@ -64,6 +62,7 @@
 		position: initial;
 		display: flex;
 		width: initial;
+		// align-items: center;
 		box-shadow: none;
 		border-top: none;
 		padding: 0;

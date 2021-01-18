@@ -713,6 +713,13 @@ a {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .commands {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .commands-div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -731,6 +738,12 @@ a {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .commands-div h2 {
+    padding-bottom: 50px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .commands-list li {
     width: 354px;
@@ -742,10 +755,6 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .commands {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
   .commands-div h2 {
     padding-bottom: 50px;
   }
@@ -981,6 +990,15 @@ a {
   margin-right: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-div {
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
+  }
+}
+
 /* Лого футтера */
 .div-footer-logo {
   margin: auto;
@@ -1140,6 +1158,15 @@ a {
   margin-top: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 93px;
+  }
+}
+
 .subscription p {
   font-family: Roboto;
   font-style: normal;
@@ -1176,6 +1203,12 @@ a {
           align-items: center;
   letter-spacing: 0.03em;
   outline: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription-input {
+    width: 358px;
+  }
 }
 
 input[type="email"]::-webkit-input-placeholder {
@@ -2102,9 +2135,18 @@ textarea[name="comment"]::-moz-placeholder {
   }
 }
 
-.portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
+@media screen and (max-width: 767px) {
+  .portfolio {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
 }
 
 .portfolio-div {
@@ -2135,14 +2177,20 @@ textarea[name="comment"]::-moz-placeholder {
   padding-right: 121px;
 }
 
+.portfolio-nav:nth-child(-n+2) {
+  margin-bottom: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media screen and (min-width: 1200px) {
   .portfolio-nav {
     width: 611px;
     margin-left: auto;
     margin-right: auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-wrap: inherit;
+        flex-wrap: inherit;
   }
 }
 
@@ -2328,6 +2376,10 @@ textarea[name="comment"]::-moz-placeholder {
 @media screen and (min-width: 1200px) {
   .contacts-nav {
     margin-left: 305px;
+    -webkit-box-orient: inherit;
+    -webkit-box-direction: inherit;
+        -ms-flex-direction: inherit;
+            flex-direction: inherit;
   }
 }
 
@@ -2352,6 +2404,7 @@ textarea[name="comment"]::-moz-placeholder {
 @media screen and (min-width: 1200px) {
   .contacts-nav li:nth-child(1) {
     padding-right: 30px;
+    margin-bottom: 0px;
   }
 }
 
