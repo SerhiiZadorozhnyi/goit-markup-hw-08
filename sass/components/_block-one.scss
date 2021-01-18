@@ -11,6 +11,18 @@
         height: auto;
     }
 
+    @media screen and (min-width: $tablet){
+        text-align: center;
+        background-color: #c4c4c4;
+        background-image: linear-gradient(
+            to right,    
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ), url('../images/Img-overlay-mobile.jpg');
+        max-width: 100%;
+        height: auto;
+    }
+
     @media screen and (min-width: $desktop){
         background-image: linear-gradient(
         to right,    

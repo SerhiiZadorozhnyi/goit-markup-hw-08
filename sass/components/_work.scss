@@ -1,14 +1,16 @@
 /* Чем мы занимаемся */
 .work{
     display: none;
+    margin: 0px;
+
+    @media screen and (min-width: $desktop){
+        display: flex;
+        // padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 @media screen and (min-width: $desktop){
-    .work{
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-    
     .work-div{
         display: flex;
         flex-direction: column;

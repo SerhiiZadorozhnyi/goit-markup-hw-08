@@ -1,6 +1,7 @@
 /*Шапка страницы*/
 #header{
-    background: $text-color-white;
+	background: $text-color-white;
+	border-bottom: 1px solid $border-header;
 	
 }
 
@@ -9,7 +10,11 @@
     align-items: center;
 	justify-content: space-between;
 	height: 59px;
-	border-bottom: 1px solid $border-header;
+	// border-bottom: 1px solid $border-header;
+
+	@media screen and (min-width: $tablet){
+		height: 80px;
+	}
 	
 	@media screen and (min-width: $desktop){
 		height: 80px;
@@ -24,7 +29,6 @@
     line-height: 28px;
     letter-spacing: 0.03em;
     color: $accent-color;
-	// margin-right: 93px;
 	
 	@media screen and (min-width: $desktop){
 		font-size: 26px;
@@ -61,8 +65,10 @@
 	@media screen and (min-width: $tablet) {
 		position: initial;
 		display: flex;
-		width: initial;
-		// align-items: center;
+		// width: initial;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
 		box-shadow: none;
 		border-top: none;
 		padding: 0;
@@ -82,6 +88,7 @@
     
 	@media screen and (min-width: $tablet) {
 		display: flex;
+		// width: 294px;
 	}
 }
 
@@ -93,7 +100,8 @@
         &:last-child {
             margin-bottom: 60px;
         }
-    }
+	}
+	
     @media screen and (min-width: $tablet) {
         margin-left: 50px;
     }
@@ -131,7 +139,7 @@
 	line-height: 21px;
 	letter-spacing: 0.02em;
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: $mobile-maximum) {
 		display: inline-block;
 		padding: 0;
     }
@@ -140,6 +148,8 @@
 		padding-top: 32px;
 		padding-bottom: 32px;
 		margin-bottom: 0;
+		font-size: 14px;
+		line-height: 16px;
 	}
 
 	@media screen and (min-width: $desktop){

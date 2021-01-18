@@ -1,7 +1,12 @@
 /* Постоянные клиенты */
 .clients{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: $desktop){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .clients-div{
@@ -22,8 +27,9 @@
     height: 330px;
 
     @media screen and (min-width: $desktop){
-        padding-top: 50px;
+        margin-top: 50px;
         flex-direction: row;
+        height: auto;
     }
 
     li{

@@ -16,11 +16,12 @@
     @media screen and (min-width: $tablet){
         flex-wrap: wrap;
         flex-flow: wrap;
-        height: 507px;
+        // height: 507px;
     }
 
     @media screen and (min-width: $desktop){
         flex-direction: inherit;
+        margin-bottom: 94px;
     }
 
     li{
@@ -37,6 +38,10 @@
 
         &:nth-child(-n+2){
             margin-bottom: 30px;
+
+            @media screen and (min-width: $desktop){
+                margin-bottom: 0px;
+            }
         }
         
         div{
