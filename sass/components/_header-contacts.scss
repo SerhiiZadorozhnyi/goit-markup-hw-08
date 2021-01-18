@@ -16,6 +16,8 @@
         }
 
         &:nth-child(1){
+            margin-bottom: 16px;
+
             @media screen and (min-width: $desktop){
                 padding-right: 30px;
             }
@@ -24,13 +26,18 @@
 
     a{
         font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 18px;
+        line-height: 21px;
         letter-spacing: 0.02em;
         color: $text-color-grey;
         display: flex;
         align-items: center;
         transition: $animation-timing-time;
+
+        @media screen and (min-width: $desktop){
+            font-size: 14px;
+            line-height: 16px;
+        }
 
         &:hover,
         &:focus{
