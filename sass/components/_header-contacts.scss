@@ -1,14 +1,24 @@
 /*Контакты*/
 .contacts-nav{
     display: flex;
-    margin-left: 305px;
+    flex-direction: column;
+    align-items: center;
+    
+    @media screen and (min-width: $desktop){
+        margin-left: 305px;
+    }
 
     li{
         display: flex;
-        align-items: center;
+
+        @media screen and (min-width: $desktop){
+            align-items: center;
+        }
 
         &:nth-child(1){
-            padding-right: 30px;
+            @media screen and (min-width: $desktop){
+                padding-right: 30px;
+            }
         }
     }
 
