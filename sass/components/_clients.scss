@@ -31,6 +31,10 @@
     // height: 330px;
     height: auto;
 
+    @media screen and (max-width: 450px){
+        justify-content: center;
+    }
+
     @media acreen and (min-width: $tablet){
         // height: inherit;
         height: auto;
