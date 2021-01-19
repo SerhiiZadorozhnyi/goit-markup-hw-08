@@ -12,14 +12,34 @@
     margin-left: auto;
     margin-right: auto;
 
+    @media screen and (min-width: $tablet){
+        flex-direction: inherit;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 76px;
+        margin-right: 89px;
+    }
+
     @media screen and (min-width: $desktop){
         flex-direction: inherit;
+        justify-content: inherit;
     }
+}
+
+.first-section{
+    display: flex;
+    flex-direction: column;
 }
 
 /* Лого футтера */
 .div-footer-logo{
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $desktop){
+        // margin-right: auto;
+        margin-left: inherit;
+    }
 }
 
 // .div-footer-logo + .footer-container{
@@ -32,12 +52,15 @@
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
-    // font-size: 26px;
     font-size: 24px;
     line-height: 28px;
-    // line-height: 31px;
     letter-spacing: 0.03em;
     color: $bt-second;
+
+    @media screen and (min-width: $desktop){
+        font-size: 26px;
+        line-height: 31px;
+    }
 
     span {
         color: $text-color-white;
@@ -82,6 +105,10 @@
     flex-direction: column;
     align-items: center;
     // justify-content: space-between;
+    
+    @media screen and (min-width: $desktop){
+        align-items: inherit;
+    }
 
     a{
         font-family: Roboto;
@@ -110,6 +137,15 @@
     margin-top: 60px;
     align-items: center;
     // margin-left: 70px;
+
+    @media screen and (min-width: $tablet){
+        margin-top: 5px;
+    }
+
+    @media screen and (min-width: $desktop){
+        margin-left: 70px;
+        margin-top: 12px;
+    }
 }
 
 .footer-social-description{
@@ -167,8 +203,14 @@
     flex-direction: column;
     margin-top: 60px;
 
+    @media screen and (min-width: $tablet){
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     @media screen and (min-width: $desktop){
         align-items: center;
+        margin-top: 12px;
         margin-left: 93px;
     }
 
@@ -181,14 +223,19 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $text-color-white;
-        margin: auto;
+        // margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: $desktop){
+            margin-right: auto;
+        }
     }
 }
 
 
 
 .subscription-input{
-    // width: 358px;
     margin-top: 20px;
     width: 100%;
     height: 50px;
@@ -197,8 +244,8 @@
     background-color:rgba(0, 0, 0, 0.0);
     border-radius: 4px;
     padding-left: 16px;
-   // padding-right: 16px;
-   // color: $text-color-white;
+   padding-right: 16px;
+   color: $text-color-white;
     background: $background-color;
     font-family: Roboto;
     font-style: normal;
@@ -209,6 +256,10 @@
     align-items: center;
     letter-spacing: 0.03em;
     outline: none;
+
+    @media screen and (min-width: $tablet){
+        width: 450px;
+    }
 
     @media screen and (min-width: $desktop){
         width: 358px;
@@ -235,11 +286,14 @@ input[type="email"]::-moz-placeholder {
     justify-content: space-between;
     padding-left: 26px;
     padding-right: 31px;
-    // margin-left: 15px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     outline: none;
+
+    @media screen and (min-width: $desktop){
+        margin-left: 12px;
+    }
 
     span{
         color: $text-color-white;

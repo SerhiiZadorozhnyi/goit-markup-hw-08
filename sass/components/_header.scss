@@ -182,7 +182,8 @@
         }
         
 		@media screen and (min-width: $tablet) {
-			top: initial;
+			// top: initial;
+			top: calc(100% - 3px);
 		}
 
 		@media screen and (min-width: $desktop){

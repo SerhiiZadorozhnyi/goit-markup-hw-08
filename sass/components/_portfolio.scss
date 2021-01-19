@@ -1,8 +1,6 @@
 .portfolio{
-    @media screen and (max-width: $mobile-maximum){
         margin-top: 60px;
         margin-bottom: 60px;
-    }
 
     @media screen and (min-width: $desktop){
         margin-top: 94px;
@@ -29,13 +27,24 @@
     //     // margin-bottom: 30px;
     //     justify-content: space-between;
     // }
-    .last-port-nav{
-        padding-right: 121px;
+    @media screen and (max-width: $mobile-maximum){
+        .last-port-nav{
+            padding-right: 121px;
+        }
     }
 
-    &:nth-child(-n+2){
-        margin-bottom: 30px;
-        justify-content: space-between;
+    // &:nth-child(-n+2){
+    //     @media screen and (max-width: $mobile-maximum){
+    //         margin-bottom: 30px;
+    //         justify-content: space-between;
+    //     }
+    // }
+
+    @media screen and (min-width: $tablet){
+        width: 611px;
+        height: 38px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media screen and (min-width: $desktop){
@@ -77,13 +86,14 @@
 }
 
 .projects{
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
 
     @media screen and (min-width: $desktop){
+        margin-top: 50px;
         height: 1272px;
     }
 
@@ -92,6 +102,12 @@
         height: 404px;
         background: $text-color-white;
         transition: $animation-timing-time;
+
+        @media screen and (min-width: $tablet){
+            width: 354px;
+            // height: 404px;
+            height: auto;
+        }
 
         @media screen and (min-width: $desktop){
             width: 370px;
@@ -104,9 +120,10 @@
         }
 
         &:nth-child(-n+8){
-            margin-bottom: 30px;
+            @media screen and (max-width: $tablet-maximum){
+                margin-bottom: 30px;
+            }
         }
-
     }
 
     a{
@@ -171,6 +188,10 @@
     border-bottom: 1px solid $border-color;
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
+
+    @media screen and (min-width: $tablet) and (max-width: $tablet-maximum){
+        padding-right: 12px;
+    }
 
     h3{
         font-weight: 700;

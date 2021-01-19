@@ -24,17 +24,41 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: space-between;
-    height: 330px;
+    // height: 330px;
+    height: auto;
 
+    @media acreen and (min-width: $tablet){
+        // height: inherit;
+        height: auto;
+    }
+
+    
     @media screen and (min-width: $desktop){
         margin-top: 50px;
         flex-direction: row;
         height: auto;
     }
-
+    
     li{
         display: flex;
         justify-content: space-between;
+
+        &:nth-child(-n+4){
+            @media screen and (max-width: $mobile-maximum){
+                margin-bottom: 30px;
+            }
+    
+            @media screen and (min-width: $tablet){
+                &:nth-child(-n+3){
+                    margin-bottom: 30px;
+                }
+            }
+
+            // @media screen and (min-width: $desktop){
+            //     margin-bottom: 0px;
+            // }
+        }
+
     }
 }
 
