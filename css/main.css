@@ -1683,8 +1683,8 @@ input[type="email"]::-moz-placeholder {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  -webkit-animation-name: anim;
-          animation-name: anim;
+  -webkit-animation-name: modalanim;
+          animation-name: modalanim;
   -webkit-animation-duration: 250ms;
           animation-duration: 250ms;
   -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1751,6 +1751,28 @@ input[type="email"]::-moz-placeholder {
   100% {
     -webkit-transform: scale(1) translate(-50%, -50%);
             transform: scale(1) translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes modalanim {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes modalanim {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
