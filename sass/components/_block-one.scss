@@ -6,9 +6,10 @@
             to right,    
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-        ), url('../images/Img-overlay.jpg');
+        ), url('../images/mobile_img_overlay.jpg');
         max-width: 100%;
-        height: auto;
+        // height: auto;
+        height: 400px;
     }
 
     @media screen and (min-width: $tablet){
@@ -18,9 +19,13 @@
             to right,    
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-        ), url('../images/Img-overlay.jpg');
+        ), url('../images/tablet_img_overlay.jpg');
         max-width: 100%;
-        height: auto;
+        // height: auto;
+        height: 400px;
+        // min-width: 600px;
+        // margin: -10% 0 0 0;
+        background-position: center;
     }
 
     @media screen and (min-width: $desktop){
@@ -28,10 +33,14 @@
         to right,    
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-        ), url('../images/Img-overlay.jpg');
+        ), url('../images/Img-overlay@1x.jpg');
         background-size: cover;
         padding-top: 200px;
         padding-bottom: 200px;
+        // height: 100%;
+        // width: 100%;
+        // max-width: 1600px;
+        height: 600px;
     }
 }
 
