@@ -1,7 +1,11 @@
 /* Постоянные клиенты */
 .clients{
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: $tablet){
+        padding-bottom: 60px;
+    }
 
     @media screen and (min-width: $desktop){
         padding-top: 94px;
@@ -43,10 +47,14 @@
         display: flex;
         justify-content: space-between;
 
+        @media screen and (max-width: $mobile-maximum){
+            margin-bottom: 30px;
+        }
+
         &:nth-child(-n+4){
-            @media screen and (max-width: $mobile-maximum){
-                margin-bottom: 30px;
-            }
+            // @media screen and (max-width: $mobile-maximum){
+            //     margin-bottom: 30px;
+            // }
     
             @media screen and (min-width: $tablet){
                 &:nth-child(-n+3){

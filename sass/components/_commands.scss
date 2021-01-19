@@ -40,7 +40,8 @@
     }
 
     li{
-        width: 100%;
+        // width: 100%;
+        width: 450px;
         height: 622px;
         background: $text-color-white;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -118,24 +119,21 @@
 }
 
 .social-list{
-    padding-left: 122px;
-    padding-right: 122px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 16px;
     margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     @media screen and (min-width: $desktop){
-        padding-left: 32px;
-        padding-right: 32px;
         margin-bottom: 30px;
     }
 
     img{
         width: 450px;
         height: 460px;
+        // width: 100%;
     }
 }
 
