@@ -20,25 +20,12 @@
     width: 362px;
     height: 91px;
     justify-content: space-between;
-    // margin-left: auto;
-    // margin-right: auto;
-
-    // &:nth-child(-n+2){
-    //     // margin-bottom: 30px;
-    //     justify-content: space-between;
-    // }
+   
     @media screen and (max-width: $mobile-maximum){
         .last-port-nav{
             padding-right: 121px;
         }
     }
-
-    // &:nth-child(-n+2){
-    //     @media screen and (max-width: $mobile-maximum){
-    //         margin-bottom: 30px;
-    //         justify-content: space-between;
-    //     }
-    // }
 
     @media screen and (min-width: $tablet){
         width: 611px;
@@ -49,14 +36,12 @@
 
     @media screen and (min-width: $desktop){
             width: 611px;
-            // height: 54px;
             margin-left: auto;
             margin-right: auto;
             flex-wrap: inherit;
         }
 
     button{
-        // height: 38px;
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
@@ -105,7 +90,6 @@
 
         @media screen and (min-width: $tablet){
             width: 354px;
-            // height: 404px;
             height: auto;
         }
 
@@ -171,12 +155,10 @@
     display: flex;
     position: relative;
     overflow: hidden;
-    // width: 100%;
     height: 294px;
 
     img{
         width: 100%;
-        // height: 294px;
     }
 }
 

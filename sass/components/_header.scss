@@ -10,7 +10,6 @@
     align-items: center;
 	justify-content: space-between;
 	height: 59px;
-	// border-bottom: 1px solid $border-header;
 
 	@media screen and (min-width: $tablet){
 		height: 80px;
@@ -46,7 +45,6 @@
 	@media screen and (max-width: 767px) {
 		display: none;
         position: absolute;
-		// top: 100%;
 		z-index: 2;
 		top: 59px;
 		left: 0;
@@ -65,7 +63,6 @@
 	@media screen and (min-width: $tablet) {
 		position: initial;
 		display: flex;
-		// width: initial;
 		width: 100%;
 		justify-content: space-between;
 		align-items: center;
@@ -88,7 +85,6 @@
     
 	@media screen and (min-width: $tablet) {
 		display: flex;
-		// width: 294px;
 	}
 }
 
@@ -182,7 +178,6 @@
         }
         
 		@media screen and (min-width: $tablet) {
-			// top: initial;
 			top: calc(100% - 3px);
 		}
 

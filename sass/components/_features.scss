@@ -16,7 +16,6 @@
     @media screen and (min-width: $tablet){
         flex-wrap: wrap;
         flex-flow: wrap;
-        // height: 507px;
     }
 
     @media screen and (min-width: $desktop){
@@ -52,7 +51,6 @@
             align-items: center;
             background-color: $bt-primary;
             border-radius: 4px;
-            // padding-bottom: 30px;
             margin-bottom: 30px;
         }
     }
