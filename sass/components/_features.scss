@@ -69,6 +69,12 @@
         color: $text-color-black;
         padding-bottom: 10px;
         text-align: center;
+
+        @media screen and (min-width: $tablet){
+            text-align: initial;
+        }
+
+        
     }
 
     p{
